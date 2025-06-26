@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PMT</title>
+
+
+  <!--CSS -->
+
+  <link id="ctl00_favicon" rel="shortcut icon" href="https://www.reliancegeneral.co.in/SiteAssets/RgiclAssets/images/icons/rgi-fav-icon.ico"
+    type="image/vnd.microsoft.icon" />
+
+  <link rel="apple-touch-icon" href="https://www.reliancegeneral.co.in/SiteAssets/RgiclAssets/images/icons/rgi-fav-icon.ico" sizes="180x180" />
+
+  <link rel="stylesheet" href="https://www.reliancegeneral.co.in/SiteAssets/MidLife/js/datepicker/semantic.min.css">
+
+  <link rel="stylesheet" href="https://www.reliancegeneral.co.in/SiteAssets/MidLife/css/common/headerStylesheet.min.css">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+ <link rel="stylesheet" href="css/pmt-style.css">
+  <link rel="stylesheet" href="css/pmt-responsive.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+  <script src="https://www.reliancegeneral.co.in/SiteAssets/MidLife/js/common/jquery-3.6.1.min.js"></script>
+
+  <style>
+.ui.popup table{
+  width: 250px;
+}
+
+  </style>
+ 
+</head>
+
+<body>
+  <div class="popupOverlay"></div>
+  <div class="headerPart">
+    <header class="col-100 floatLft textCenter">
+      <div class="wrapper-1600">
+        <div class="ap-header-logo flexDisplay alignCenter headLogo">
+          <div class="ap-logo flexDisplay">
+            <a href="javascript:;" class="ap-hamburgerClick inlineBlk">
+              <img src="https://custportuat.reliancegeneral.co.in/SiteAssets/MidLife/images/hamburger-ico.svg"
+                width="21" height="15" alt="Menu Icon" title="Menu Icon">
+            </a>
+            <div class="ap-logoWrp"><a href="https://www.reliancegeneral.co.in/insurance/home.aspx"><img src="images/logo.webp" width="243" height="36" alt="Reliance General Insurance Logo" title="Reliance General Insurance Logo"></a></div>
+          </div>
+
+          <div class="dasheader">
+            
+<div class="dashList">
+            <ul>
+              <li><a href="landing.html" class="active"><i class="fa-solid fa-house"></i> Dashboard</a></li>
+              <li><a href="#" class=""><i class="fas fa-info-circle"></i>  Tariff Information</a></li>
+              <li><a href="on-spot-settlement.html" class=""><i class="fas fa-cogs"></i>  On Spot Settlement</a></li>
+            </ul>
+          </div>
+            <div class="locsearch">
+              <div></div>
+            </div>
+          </div>
+
+          <div class="searchnoti">
+
+            <div class="search-bar">
+              <input class="ap-input-box" type="text" placeholder="Search...">
+              <button class="search-button"><i class="fa fa-search"></i> </button>
+            </div>
+
+            <div id="notiBell" class="notification-bell">
+              <img src="images/noti-icons.png">
+              <span class="badge">3</span>
+            </div>
+            </div>
+          </div>
+        </div>
+      </header>
+  </div>
+
+  <section class="col-100 floatLft flexDisplay justifyCenter ap-greyBg pdtb-25">
+    <div class="wrapper-1600">
+      
+      <div class="pTxt mb-3 head-back">
+        <p class="col-100 kycHeadings textLeft mb-0 fs-medium natural-black fw-regular">Alerts & Triggers</p>
+        <button class="btn backbtnhs fw-bold"><i class="fa fa-angle-left" aria-hidden="true"></i>
+          Back</button>
+      </div>
+
+      <div class="Alertslabel">
+        <p class="fs-medium natural-black fw-semibold">HGIX07487 on 25-Sep-2024</p>
+      </div>
+
+      <div class="altrigger-form">
+        <div class="altrigger-form-group">
+          <label class="fs-medium" for="">Policy Number </label>
+          <input class="NumberOnly" type="text" id="" value="135288002545655" placeholder="" readonly>
+        </div>
+        <div class="altrigger-form-group">
+          <label class="fs-medium" for="">Policy Name </label>
+          <input class="TxtOnly" type="text" id="" value="Prashant Salunkhe" placeholder="" readonly>
+        </div>
+
+
+        <div class="altrigger-form-group">
+          <label class="fs-medium" for="">Patient UHID </label>
+          <input type="text" id="" value="RCANM5465854525" placeholder="" onclick="window.location.href = 'patient-uhid.html';" readonly>
+        </div>
+
+        <div class="altrigger-form-group">
+          <label class="fs-medium" for="">CL Number </label>
+          <input type="text" id="" value="20458954256120" placeholder="" onclick="window.location.href = 'cl-number.html';" readonly>
+        </div>
+
+        <div class="altrigger-form-group">
+          <label class="fs-medium" for="">Patient Name </label>
+          <input class="TxtOnly" value="Channelplay Limited" type="text" id="" placeholder="" readonly>
+        </div>
+        <div class="altrigger-form-group">
+          <label class="fs-medium" for="">Hospital Code </label>
+          <input type="text" id="" placeholder="" value="415125511" readonly>
+        </div>
+        <div class="altrigger-form-group">
+          <label class="fs-medium" for="">Hospital Name </label>
+          <input class="TxtOnly" type="text" id="" placeholder="" value="Padma Chandra Hospitals" readonly>
+        </div>
+
+
+        <div class="altrigger-form-group">
+          <label class="fs-medium" for="">Address 1</label>
+          <textarea type="text" id="" placeholder="" disabled>46/93/35-1 Budhawar Peta Kurnool Andra Pradesh 518002</textarea>
+        </div>
+
+        <div class="altrigger-form-group">
+          <label class="fs-medium" for="">Address 2</label>
+          <textarea type="text" id="" placeholder="" disabled></textarea>
+        </div>
+
+        <div class="altrigger-form-group">
+          <label class="fs-medium" for="">Address 3</label>
+          <textarea type="text" id="" placeholder="" disabled></textarea>
+        </div>
+
+        <div class="altrigger-form-group">
+          <label class="fs-medium" for="">State</label>
+          <input class="TxtOnly" type="text" id="" placeholder="" value="Andra Pradesh" readonly>
+        </div>
+
+        <div class="altrigger-form-group">
+          <label class="fs-medium" for="">District</label>
+          <input class="TxtOnly" type="text" id="" placeholder="" value="Kurnool" readonly>
+        </div>
+
+        <div class="altrigger-form-group">
+          <label class="fs-medium" for="">City/Village</label>
+          <input class="TxtOnly" type="text" id="" placeholder="" value="Kurnool" readonly>
+        </div>
+
+        <div class="altrigger-form-group">
+          <label class="fs-medium" for="">Pincode</label>
+          <input class="NumberOnly" type="text" id="" placeholder="" value="518002" readonly>
+        </div>
+
+
+        <div class="altrigger-form-group">
+          <label class="fs-medium" for="">Hospital Mobile </label>
+          <input class="NumberOnly" type="text" id="" placeholder="" maxlength="10" minlength="10" value="8545846589" readonly>
+        </div>
+        <div class="altrigger-form-group">
+          <label class="fs-medium" for="">Hospital Email ID </label>
+          <input type="email" id="" placeholder="" value="insurancekurnool@omnihospitals.in" readonly>
+        </div>
+
+        <div class="altrigger-form-group">
+          <label class="fs-medium" for="">Disease Procedure Code Description</label>
+          <input type="TxtOnly" id="" placeholder="" value="Laser haemorrhoidectomy + fissurectomy (stapler / tackers included)" readonly>
+        </div>
+
+        <div class="altrigger-form-group">
+          <label class="fs-medium" for="">Requested Amount </label>
+          <input class="NumberOnly" type="text" id="" placeholder="" value="142594.00" readonly>
+        </div>
+
+        <div class="altrigger-form-group">
+          <label class="fs-medium" for="">Gross Payable Amount </label>
+          <input class="NumberOnly" type="text" id="" placeholder="" value="129294.00" readonly>
+        </div>
+
+        <div class="altrigger-form-group">
+          <label class="fs-medium" for="">Copayment</label>
+          <input class="NumberOnly" type="text" id="" placeholder="" value="0.00" readonly>
+        </div>
+
+        <div class="altrigger-form-group">
+          <label class="fs-medium" for="">Discount </label>
+          <input class="NumberOnly" type="text" id="" placeholder="" value="0.00" readonly>
+        </div>
+
+        <div class="altrigger-form-group">
+          <label class="fs-medium" for="">Net Sanction Amount </label>
+          <input class="NumberOnly" type="text" id="" placeholder="" value="129294.00" readonly>
+        </div>
+
+    
+        <div class="altrigger-form-group">
+          <label class="fs-medium" for="">Approver Remarks </label>
+          <input class="TxtOnly" type="text" id="" placeholder="" value="Provider charged over and above the agreed tariff on Procedure. Please instruct with them to not to collect excess charges from member." readonly>
+        </div>
+
+       
+        <div class="altrigger-form-group dobCalender relative">
+          <label class="fs-medium" for="">Expected revert by <span class="astric">*</span></label>
+          <input type="text" class="dateofbirth ckycinput dob"
+            placeholder="" name="dob" autocomplete="off" value="May 7, 2025" disabled>
+            <div class="ap-caledar-ico absolute"><span class="sprite-calender-icon"></span></div>
+        </div>
+
+        <div class="altrigger-form-group">
+          <label class="fs-medium" for="">Recommendation Master <span class="astric">*</span></label>
+          <select class="fs-medium" required disabled>
+            <option class="fs-medium">Genuine 1</option>
+            <option class="fs-medium">Genuine 2</option>
+            <option class="fs-medium">Genuine 3</option>
+          </select>
+        </div>
+
+        <div class="altrigger-form-group">
+          <label class="fs-medium" for="">PMT Remarks </label>
+          <textarea type="text" id="" placeholder=""></textarea>
+        </div>
+
+   
+        <div class="pmtTrigger">
+          <div class="pmtrigger-group wdth20">
+            <p class="fs-medium pmtRepothead">PMT Trigger List </p>
+          </div>
+
+          <div class="pmtrigger-group wdth80">
+            <p class="fs-medium mb-0">PMT Trigger</p>
+            <p class="fs-medium mb-0">PMT Trigger By</p>
+          </div>
+
+        </div>
+      
+
+      <div class="pmtReport">
+        <div class="file-upload-container">
+          <div>
+            <p class="fs-medium pmtRepothead">PMT Reports <span class="astric">*</span></p>
+          </div>
+
+          <div class="browupld">
+          <div class="fileChoose">
+            <div class="file-name fs-medium" id="file-name">No file selected</div>
+            <label for="file-upload" class="custom-file-label fw-semibold fs-medium">
+              <img src="images/browser.png" alt="Browse Icon" class="button-icon" />
+              Browse
+            </label>
+            <input type="file" id="file-upload" class="file-input" onchange="displayFileName()"/>
+          </div>
+
+
+          <div>
+            <button class="upload-button fs-medium fw-semibold" onclick="uploadFile()">
+              <img src="images/upload.png" alt="Upload Icon" class="button-icon" />
+              Upload
+            </button>
+          </div>
+          </div>
+
+        </div>
+    <div class="pmtrptble">
+        <table id="file-table">
+          <thead>
+            <tr>
+              <th>PMT Reports</th>
+              <th>Document Link</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+           
+          </tbody>
+        </table>
+    </div>
+        <div class="remarks-container">
+          <label for="remarks fs-medium">Remarks <span class="astric">*</span></label>
+          <textarea id="remarks" placeholder="Enter remarks here..." maxlength="1000" required></textarea>
+          <div class="remarks-buttons">
+            <button type="button" class="fs-medium fw-semibold">Remarks History</button>
+            <button type="button" class="fs-medium fw-semibold">Add Remarks</button>
+          </div>
+        </div>
+    
+        <div class="footer-buttons">
+          <button type="button" class="fs-medium fw-semibold">Save</button>
+          <button type="submit" class="fs-medium fw-semibold">Submit</button>
+          <button type="button" class="fs-medium fw-semibold">Keep</button>
+          <button type="button" class="exit-button fs-medium fw-semibold">Exit</button>
+        </div>
+      </div>
+
+
+      </div>
+
+
+      </div>
+  </section>
+
+
+  <div class="notification-container" id="notification">
+    <div class="notification">
+      <div class="notiicon">💳</div>
+      <div class="noticontent">
+        <p><strong>1101000123456</strong> Cashless Trigger for Hospital Lilavati Mumbai 400051</p>
+        <span class="notitime">45 min ago</span>
+      </div>
+      <button class="noticlose-btn">&times;</button>
+    </div>
+
+    <div class="notification">
+      <div class="notiicon">❤️</div>
+      <div class="noticontent">
+        <p><strong>Hospital Empanelment Request</strong> - Shubham Hospital - Mumbai 400051</p>
+        <span class="notitime">8 hrs ago</span>
+      </div>
+      <button class="noticlose-btn">&times;</button>
+    </div>
+
+    <div class="notification">
+      <div class="notiicon">✅</div>
+      <div class="noticontent">
+        <p><strong>On Spot Settlement Alert</strong> - 11012345673 - Tunga Hospital - Mumbai 400063</p>
+        <span class="notifile-size">670 kb</span>
+      </div>
+      <button class="noticlose-btn">&times;</button>
+    </div>
+  </div>
+    
+  <!--script-->
+  <script src="https://www.reliancegeneral.co.in/SiteAssets/MidLife/js/common/customHeader.js" defer></script>
+  <script src="js/script.js"></script>
+  <script src="https://www.reliancegeneral.co.in/SiteAssets/MidLife/js/datepicker/semantic.min.js"></script>
+
+<script>
+ $(".dobCalender").calendar({
+    startMode: "year",
+    type: "date",
+});
+
+</script>
+
+<script>
+  function displayFileName() {
+    const fileInput = document.getElementById("file-upload");
+    const fileNameElement = document.getElementById("file-name");
+    const fileName = fileInput.files[0]?.name || "No file selected";
+    fileNameElement.textContent = fileName;
+  }
+
+  function uploadFile() {
+    const fileInput = document.getElementById("file-upload");
+    const fileTable = document.getElementById("file-table");
+    const remarksContainer = document.querySelector(".remarks-container");
+    const footerbuttons = document.querySelector(".footer-buttons");
+    const fileTableBody = fileTable.querySelector("tbody");
+
+    if (!fileInput.files.length) {
+      alert("Please select a file before uploading.");
+      return;
+    }
+
+    const fileName = fileInput.files[0].name;
+
+    const newRow = document.createElement("tr");
+    newRow.innerHTML = `
+      <td>${fileName}</td>
+      <td><a href="#" target="_blank">${fileName}</a></td>
+      <td><span class="delete-link" onclick="deleteRow(this)">Delete</span></td>
+    `;
+    fileTableBody.appendChild(newRow);
+
+    fileTable.style.display = "table"; // Show file table
+    remarksContainer.style.display = "block"; // Show remarks container
+    footerbuttons.style.display = "block";
+
+    fileInput.value = ""; // Reset file input
+    document.getElementById("file-name").textContent = "No file selected";
+  }
+
+  function deleteRow(element) {
+    const row = element.parentElement.parentElement;
+    row.remove();
+  }
+
+</script>
+
+
+</body>
+
+</html>
